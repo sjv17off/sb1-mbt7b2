@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tasko - Reports & Analytics</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="ml-64 p-8">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Reports & Analytics</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Task Statistics -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-4">Task Statistics</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-500">Completion Rate</h3>
+                        <div class="mt-1">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 rounded-full h-2" th:style="'width: ' + ${taskCompletionRate} + '%'"></div>
+                            </div>
+                            <p class="mt-1 text-sm text-gray-600" th:text="${taskCompletionRate + '%'}"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-500">Tasks by Status</h3>
+                        <div class="mt-1 space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-sm text-gray-600">Completed</span>
+                                <span class="text-sm font-medium text-gray-900" th:text="${completedTasks}"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm text-gray-600">Pending</span>
+                                <span class="text-sm font-medium text-gray-900" th:text="${pendingTasks}"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attendance Overview -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-4">Attendance Overview</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-500">Present Rate</h3>
+                        <div class="mt-1">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 rounded-full h-2" th:style="'width: ' + ${attendanceRate} + '%'"></div>
+                            </div>
+                            <p class="mt-1 text-sm text-gray-600" th:text="${attendanceRate + '%'}"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-500">Attendance by Status</h3>
+                        <div class="mt-1 space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-sm text-gray-600">Present</span>
+                                <span class="text-sm font-medium text-gray-900" th:text="${presentCount}"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm text-gray-600">Late</span>
+                                <span class="text-sm font-medium text-gray-900" th:text="${lateCount}"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-sm text-gray-600">Absent</span>
+                                <span class="text-sm font-medium text-gray-900" th:text="${absentCount}"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

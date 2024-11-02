@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Tasko - Admin Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Sidebar -->
+    <div class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg">
+        <div class="flex items-center justify-center h-16 bg-blue-600">
+            <span class="text-white text-xl font-bold">Tasko Admin</span>
+        </div>
+        <nav class="mt-5">
+            <a href="/dashboard" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>Dashboard</span>
+            </a>
+            <a href="/enterprises" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>Enterprise Management</span>
+            </a>
+            <a href="/users/manage" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>User Management</span>
+            </a>
+            <a href="/payroll/manage" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>Payroll Management</span>
+            </a>
+            <a href="/tasks/manage" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>Task Management</span>
+            </a>
+            <a href="/reports" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>Reports & Analytics</span>
+            </a>
+            <form th:action="@{/logout}" method="post" class="px-6 py-2">
+                <button type="submit" class="text-gray-700 hover:text-red-600">Logout</button>
+            </form>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ml-64 p-8">
+        <div class="mb-8">
+            <h1 class="text-2xl font-bold text-gray-800">Welcome, <span th:text="${user.username}">Admin</span>!</h1>
+            <p class="text-gray-600" th:text="${enterprise.name + ' Enterprise'}">Enterprise Name</p>
+        </div>
+
+        <!-- Statistics Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-700">Total Users</h3>
+                <p class="text-3xl font-bold text-blue-600" th:text="${userCount}">0</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-700">Active Tasks</h3>
+                <p class="text-3xl font-bold text-green-600" th:text="${activeTaskCount}">0</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-700">Today's Attendance</h3>
+                <p class="text-3xl font-bold text-purple-600" th:text="${todayAttendanceCount}">0</p>
+            </div>
+        </div>
+
+        <!-- Recent Tasks -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-xl font-bold mb-4">Recent Tasks</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Task
+                            </th>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Assigned To
+                            </th>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Due Date
+                            </th>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Status
+                            </th>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr th:each="task : ${recentTasks}">
+                            <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                <div class="text-sm leading-5 font-medium text-gray-900" th:text="${task.title}"></div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                <div class="text-sm leading-5 text-gray-500">
+                                    <span th:each="user, iterStat : ${task.assignedUsers}">
+                                        <span th:text="${user.username}"></span>
+                                        <span th:if="${!iterStat.last}">, </span>
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                <div class="text-sm leading-5 text-gray-500" th:text="${#temporals.format(task.dueDate, 'dd MMM yyyy')}"></div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                <span th:if="${task.completed}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                    Completed
+                                </span>
+                                <span th:unless="${task.completed}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                    Pending
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
+                                <a th:href="@{/tasks/{id}(id=${task.id})}" class="text-blue-600 hover:text-blue-900">View</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- System Status -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-bold mb-4">System Status</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-gray-700">Database Status</h3>
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        Connected
+                    </span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-700">Last System Update</h3>
+                    <p class="text-sm text-gray-500" th:text="${#temporals.format(lastBackup, 'dd MMM yyyy HH:mm')}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

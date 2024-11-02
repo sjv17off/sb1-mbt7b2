@@ -1,0 +1,443 @@
+INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[3,26] package javafx.application does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[4,26] package javafx.application does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[5,23] package javafx.geometry does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[6,23] package javafx.geometry does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[7,20] package javafx.scene does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[10,20] package javafx.stage does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[11,26] package javafx.scene.paint does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[16,36] cannot find symbol
+  symbol: class Application
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[17,13] cannot find symbol
+  symbol:   class TextArea
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[18,13] cannot find symbol
+  symbol:   class Button
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[19,13] cannot find symbol
+  symbol:   class Button
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[21,13] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[22,13] cannot find symbol
+  symbol:   class ProgressBar
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[26,23] cannot find symbol
+  symbol:   class Stage
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[73,13] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[88,13] cannot find symbol
+  symbol:   class HBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[109,13] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[124,13] cannot find symbol
+  symbol:   class TitledPane
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[141,13] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[242,36] cannot find symbol
+  symbol:   class Stage
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[8,1] package javafx.scene.control does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[9,1] package javafx.scene.layout does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/UserManagementController.java:[38,20] cannot find symbol
+  symbol:   method updateUser(com.example.tasko.model.User)
+  location: variable userService of type com.example.tasko.service.UserService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/UserManagementController.java:[44,20] cannot find symbol
+  symbol:   method deleteUser(java.lang.Long)
+  location: variable userService of type com.example.tasko.service.UserService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/ReportsController.java:[33,46] cannot find symbol
+  symbol:   method getPresentCount()
+  location: variable attendanceService of type com.example.tasko.service.AttendanceService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/ReportsController.java:[34,43] cannot find symbol
+  symbol:   method getLateCount()
+  location: variable attendanceService of type com.example.tasko.service.AttendanceService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/ReportsController.java:[35,45] cannot find symbol
+  symbol:   method getAbsentCount()
+  location: variable attendanceService of type com.example.tasko.service.AttendanceService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[25,5] method does not override or implement a method from a supertype
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[30,9] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[30,25] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[31,29] cannot find symbol
+  symbol:   class Insets
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[35,9] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[35,32] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[39,9] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[42,9] cannot find symbol
+  symbol:   class HBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[45,9] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[48,9] cannot find symbol
+  symbol:   class TitledPane
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[53,17] cannot find symbol
+  symbol:   class Separator
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[60,9] cannot find symbol
+  symbol:   class Scene
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[60,27] cannot find symbol
+  symbol:   class Scene
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[74,9] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[74,30] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[75,32] cannot find symbol
+  symbol:   variable Pos
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[77,27] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[80,27] cannot find symbol
+  symbol:   class ProgressBar
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[89,9] cannot find symbol
+  symbol:   class HBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[89,30] cannot find symbol
+  symbol:   class HBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[90,32] cannot find symbol
+  symbol:   variable Pos
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[92,27] cannot find symbol
+  symbol:   class Button
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[96,26] cannot find symbol
+  symbol:   class Button
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[101,9] cannot find symbol
+  symbol:   class Button
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[101,34] cannot find symbol
+  symbol:   class Button
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[110,9] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[110,31] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[111,9] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[111,34] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[114,29] cannot find symbol
+  symbol:   class TextArea
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[125,9] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[125,40] cannot find symbol
+  symbol:   class VBox
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[126,44] cannot find symbol
+  symbol:   class Insets
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[136,9] cannot find symbol
+  symbol:   class TitledPane
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[136,43] cannot find symbol
+  symbol:   class TitledPane
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[142,9] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[142,27] cannot find symbol
+  symbol:   class Label
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[150,33] cannot find symbol
+  symbol:   variable ProgressBar
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[171,21] cannot find symbol
+  symbol:   variable Platform
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[175,21] cannot find symbol
+  symbol:   variable Platform
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[192,25] cannot find symbol
+  symbol:   variable Platform
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[202,21] cannot find symbol
+  symbol:   variable Platform
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[210,17] cannot find symbol
+  symbol:   variable Platform
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[234,33] cannot find symbol
+  symbol:   variable Color
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[243,9] cannot find symbol
+  symbol:   class Alert
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[243,27] cannot find symbol
+  symbol:   class Alert
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[243,38] package Alert does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[249,29] cannot find symbol
+  symbol:   variable ButtonType
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[257,9] cannot find symbol
+  symbol:   method launch(java.lang.String[])
+  location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/TaskController.java:[37,42] method getTasksPaginated in class com.example.tasko.service.TaskService cannot be applied to given types;
+  required: org.springframework.data.domain.Pageable
+  found: org.springframework.data.domain.PageRequest,java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/TaskController.java:[106,41] cannot find symbol
+  symbol:   method completeTask(java.lang.Long)
+  location: variable taskService of type com.example.tasko.service.TaskService
+[INFO] 78 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.855 s
+[INFO] Finished at: 2024-11-01T23:05:10+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project tasko: Compilation failure: Compilation failure: 
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[3,26] package javafx.application does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[4,26] package javafx.application does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[5,23] package javafx.geometry does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[6,23] package javafx.geometry does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[7,20] package javafx.scene does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[10,20] package javafx.stage does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[11,26] package javafx.scene.paint does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[16,36] cannot find symbol
+[ERROR]   symbol: class Application
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[17,13] cannot find symbol
+[ERROR]   symbol:   class TextArea
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[18,13] cannot find symbol
+[ERROR]   symbol:   class Button
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[19,13] cannot find symbol
+[ERROR]   symbol:   class Button
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[21,13] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[22,13] cannot find symbol
+[ERROR]   symbol:   class ProgressBar
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[26,23] cannot find symbol
+[ERROR]   symbol:   class Stage
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[73,13] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[88,13] cannot find symbol
+[ERROR]   symbol:   class HBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[109,13] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[124,13] cannot find symbol
+[ERROR]   symbol:   class TitledPane
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[141,13] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[242,36] cannot find symbol
+[ERROR]   symbol:   class Stage
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[8,1] package javafx.scene.control does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[9,1] package javafx.scene.layout does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/UserManagementController.java:[38,20] cannot find symbol
+[ERROR]   symbol:   method updateUser(com.example.tasko.model.User)
+[ERROR]   location: variable userService of type com.example.tasko.service.UserService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/UserManagementController.java:[44,20] cannot find symbol
+[ERROR]   symbol:   method deleteUser(java.lang.Long)
+[ERROR]   location: variable userService of type com.example.tasko.service.UserService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/ReportsController.java:[33,46] cannot find symbol
+[ERROR]   symbol:   method getPresentCount()
+[ERROR]   location: variable attendanceService of type com.example.tasko.service.AttendanceService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/ReportsController.java:[34,43] cannot find symbol
+[ERROR]   symbol:   method getLateCount()
+[ERROR]   location: variable attendanceService of type com.example.tasko.service.AttendanceService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/ReportsController.java:[35,45] cannot find symbol
+[ERROR]   symbol:   method getAbsentCount()
+[ERROR]   location: variable attendanceService of type com.example.tasko.service.AttendanceService
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[25,5] method does not override or implement a method from a supertype
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[30,9] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[30,25] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[31,29] cannot find symbol
+[ERROR]   symbol:   class Insets
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[35,9] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[35,32] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[39,9] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[42,9] cannot find symbol
+[ERROR]   symbol:   class HBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[45,9] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[48,9] cannot find symbol
+[ERROR]   symbol:   class TitledPane
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[53,17] cannot find symbol
+[ERROR]   symbol:   class Separator
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[60,9] cannot find symbol
+[ERROR]   symbol:   class Scene
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[60,27] cannot find symbol
+[ERROR]   symbol:   class Scene
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[74,9] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[74,30] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[75,32] cannot find symbol
+[ERROR]   symbol:   variable Pos
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[77,27] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[80,27] cannot find symbol
+[ERROR]   symbol:   class ProgressBar
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[89,9] cannot find symbol
+[ERROR]   symbol:   class HBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[89,30] cannot find symbol
+[ERROR]   symbol:   class HBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[90,32] cannot find symbol
+[ERROR]   symbol:   variable Pos
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[92,27] cannot find symbol
+[ERROR]   symbol:   class Button
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[96,26] cannot find symbol
+[ERROR]   symbol:   class Button
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[101,9] cannot find symbol
+[ERROR]   symbol:   class Button
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[101,34] cannot find symbol
+[ERROR]   symbol:   class Button
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[110,9] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[110,31] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[111,9] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[111,34] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[114,29] cannot find symbol
+[ERROR]   symbol:   class TextArea
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[125,9] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[125,40] cannot find symbol
+[ERROR]   symbol:   class VBox
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[126,44] cannot find symbol
+[ERROR]   symbol:   class Insets
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[136,9] cannot find symbol
+[ERROR]   symbol:   class TitledPane
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[136,43] cannot find symbol
+[ERROR]   symbol:   class TitledPane
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[142,9] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[142,27] cannot find symbol
+[ERROR]   symbol:   class Label
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[150,33] cannot find symbol
+[ERROR]   symbol:   variable ProgressBar
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[171,21] cannot find symbol
+[ERROR]   symbol:   variable Platform
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[175,21] cannot find symbol
+[ERROR]   symbol:   variable Platform
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[192,25] cannot find symbol
+[ERROR]   symbol:   variable Platform
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[202,21] cannot find symbol
+[ERROR]   symbol:   variable Platform
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[210,17] cannot find symbol
+[ERROR]   symbol:   variable Platform
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[234,33] cannot find symbol
+[ERROR]   symbol:   variable Color
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[243,9] cannot find symbol
+[ERROR]   symbol:   class Alert
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[243,27] cannot find symbol
+[ERROR]   symbol:   class Alert
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[243,38] package Alert does not exist
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[249,29] cannot find symbol
+[ERROR]   symbol:   variable ButtonType
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/launcher/TaskoLauncher.java:[257,9] cannot find symbol
+[ERROR]   symbol:   method launch(java.lang.String[])
+[ERROR]   location: class com.example.tasko.launcher.TaskoLauncher
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/TaskController.java:[37,42] method getTasksPaginated in class com.example.tasko.service.TaskService cannot be applied to given types;
+[ERROR]   required: org.springframework.data.domain.Pageable
+[ERROR]   found: org.springframework.data.domain.PageRequest,java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/sharon/Documents/project1/2befixed3/src/main/java/com/example/tasko/controller/TaskController.java:[106,41] cannot find symbol
+[ERROR]   symbol:   method completeTask(java.lang.Long)
+[ERROR]   location: variable taskService of type com.example.tasko.service.TaskService
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

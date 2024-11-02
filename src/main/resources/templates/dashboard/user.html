@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Tasko - User Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Sidebar -->
+    <div class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg">
+        <div class="flex items-center justify-center h-16 bg-blue-600">
+            <span class="text-white text-xl font-bold">Tasko</span>
+        </div>
+        <nav class="mt-5">
+            <a href="/dashboard" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>Dashboard</span>
+            </a>
+            <a href="/tasks" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>My Tasks</span>
+            </a>
+            <a href="/attendance/log" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>Log Attendance</span>
+            </a>
+            <a href="/profile" class="flex items-center px-6 py-2 text-gray-700 hover:bg-blue-100">
+                <span>Profile</span>
+            </a>
+            <form th:action="@{/logout}" method="post" class="px-6 py-2">
+                <button type="submit" class="text-gray-700 hover:text-red-600">Logout</button>
+            </form>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ml-64 p-8">
+        <div class="mb-8">
+            <h1 class="text-2xl font-bold text-gray-800">Welcome, <span th:text="${user.username}">User</span>!</h1>
+        </div>
+
+        <!-- Today's Attendance -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Today's Attendance</h2>
+            <div th:if="${todayAttendance == null}">
+                <form th:action="@{/attendance/log}" method="post">
+                    <select name="status" class="border rounded p-2 mr-2">
+                        <option value="PRESENT">Present</option>
+                        <option value="LATE">Late</option>
+                        <option value="HALF_DAY">Half Day</option>
+                    </select>
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                        Log Attendance
+                    </button>
+                </form>
+            </div>
+            <div th:if="${todayAttendance != null}" class="text-green-600 font-semibold">
+                Attendance Logged: <span th:text="${todayAttendance.status}"></span>
+            </div>
+        </div>
+
+        <!-- Recent Tasks -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-bold mb-4">My Recent Tasks</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Task
+                            </th>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Due Date
+                            </th>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Status
+                            </th>
+                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr th:each="task : ${recentTasks}">
+                            <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                <div class="text-sm leading-5 font-medium text-gray-900" th:text="${task.title}"></div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                <div class="text-sm leading-5 text-gray-500" th:text="${#temporals.format(task.dueDate, 'dd MMM yyyy')}"></div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                <span th:if="${task.completed}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                    Completed
+                                </span>
+                                <span th:unless="${task.completed}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                    Pending
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
+                                <a th:href="@{/tasks/{id}(id=${task.id})}" class="text-blue-600 hover:text-blue-900">View</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
